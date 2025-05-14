@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home with Video</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 </head>
 
 @include('partials.navbar')
@@ -181,51 +180,9 @@
                 <h3 class="text-white font-semibold">PHP</h3>
                 <p class="text-gray-400 text-sm">A widely-used open source general-purpose scripting language.</p>
             </div>
-            </div>
+        </div>
     </div>
 </div>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const rowAtas = document.querySelector('.row-atas');
-    const rowBawah = document.querySelector('.row-bawah');
-    const cardWidth = 256; // Lebar card + margin (pastikan nilainya akurat)
-
-    function animateLeft() {
-        gsap.to(rowAtas, {
-            x: -cardWidth,
-            duration: 3.3,
-            ease: "power1.inOut",
-            onComplete: () => {
-                const firstCard = rowAtas.children[0];
-                rowAtas.appendChild(firstCard); // Pindahkan card pertama ke akhir
-                gsap.set(rowAtas, { x: 0 }); // Reset posisi tanpa animasi
-                animateLeft(); // Loop lagi
-            }
-        });
-    }
-
-    function animateRight() {
-        gsap.to(rowBawah, {
-            x: cardWidth,
-            duration: 3.3,
-            ease: "power1.inOut",
-            onComplete: () => {
-                const lastCard = rowBawah.children[rowBawah.children.length - 1];
-                rowBawah.insertBefore(lastCard, rowBawah.firstChild); // Pindahkan card terakhir ke awal
-                gsap.set(rowBawah, { x: 0 }); // Reset posisi tanpa animasi
-                animateRight(); // Loop lagi
-            }
-        });
-    }
-
-    if (rowAtas && rowBawah) {
-        animateLeft();
-        animateRight();
-    }
-});
-</script>
-
 </body>
 
 @include('partials.footer')

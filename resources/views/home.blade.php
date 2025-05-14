@@ -6,26 +6,32 @@
     <title>Home with Video</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="relative min-h-screen overflow-auto">
+<body class="relative min-h-screen overflow-auto background-color: #000">
 
     <!-- 🔥 Background Video -->
-   <video autoplay muted loop class="fixed top-0 left-0 w-full h-full object-cover z-[-1]">
+<section class="fixed top-0 left-0 w-full h-full z-[-20]">
+  <video autoplay muted loop playsinline class="w-full h-full object-cover">
     <source src="{{ asset('/storage/bluewave.mp4') }}" type="video/mp4">
     Your browser does not support the video tag.
-</video>
+  </video>
+</section>
+
+
     
     <!-- Navbar -->
     @include('partials.navbar')
 
     <!-- ✨ Content di atas video -->
-    <div class="flex items-center pl-8 h-screen text-white text-center">
+    <div class="flex items-center pl-8 h-[80vh] md:h-screen text-white text-center mt-20">
+
          <!-- Gradasi biru -->
- <div class="absolute bottom-0 left-0 w-full h-full backdrop-blur-lg z-[-1]"></div>
+ <div class="fixed inset-0 backdrop-blur-lg z-[-10]"></div>
+
     <section class="text-white relative overflow-hidden">
   <div class="max-w-7xl mx-auto px-6 py-24">
 
     <!-- Heading -->
-    <h1 class="text-5xl sm:text-6xl leading-tight text-left">
+    <h1 class="text-5xl sm:text-8xl leading-tight text-left">
       Turning Ideas into <br />
       <span class="text-white">Digital Reality</span>
     </h1>
@@ -47,8 +53,8 @@
     </div>
 
     <!-- Logo klien -->
-    <div class="mt-16 overflow-hidden">
-  <div class="flex gap-8 animate-marquee">
+    <div class="mt-16 overflow-hidden whitespace-nowrap">
+  <div class="inline-flex gap-8 animate-marquee">
     <img src="/storage/arista.png" class="h-6" />
     <img src="/storage/citilink.png" class="h-6" />
     <img src="/storage/metri.png" class="h-6" />
@@ -97,11 +103,6 @@
     <h2 class="text-4xl md:text-5xl font-bold mt-4">Delivering Tangible Results<br>That Propel Your Success</h2>
     <p class="mt-6 text-gray-400">At the core of everything we do lies a commitment to delivering<br>measurable outcomes that drive your success.</p>
     
-    <style>
-  .glow-btn {
-    box-shadow: 0 0 15px rgba(0, 132, 255, 0.6), 0 0 30px rgba(0, 132, 255, 0.3);
-  }
-</style>
 
 
     <div class="mt-8">
@@ -226,10 +227,11 @@
         {{-- Kiri --}}
         <div>
             <span class="text-sm text-blue-500 font-semibold tracking-wide mb-2 block">COMMUNITY</span>
-            <h2 class="text-3xl md:text-4xl font-semibold mb-4 leading-snug">
-                Get High-Quality<br />
-                Clear Services Remotely.
+            <h2 class="text-3xl md:text-4xl font-semibold mb-4 leading-none">
+                Get High-Quality
             </h2>
+            <h2 class="text-3xl md:text-4xl font-semibold mb-4 leading-none text-gray-400">
+              Clear Services <br>Remotely.</h2>
             <p class="text-gray-300 mb-6 max-w-md">
                 Discover our range of services designed to elevate your brand and propel your business to next level.
             </p>
@@ -252,23 +254,23 @@
         {{-- Kanan --}}
         <div class="grid grid-cols-2 gap-8 text-white text-sm">
             <div>
-                <h3 class="text-2xl font-semibold">10+</h3>
+                <h3 class="text-7xl font-semibold">10+</h3>
                 <p class="text-gray-400 mt-1">Industries Impacted</p>
                 <div class="border-b border-blue-500 mt-3"></div>
             </div>
             <div>
-                <h3 class="text-2xl font-semibold">1,800%</h3>
-                <p class="text-gray-400 mt-1">Average Ad Spend Return</p>
+                <h3 class="text-7xl font-semibold">2</h3>
+                <p class="text-gray-400 mt-1">Years of Service</p>
                 <div class="border-b border-blue-500 mt-3"></div>
             </div>
             <div>
-                <h3 class="text-2xl font-semibold">250 Million</h3>
-                <p class="text-gray-400 mt-1">Annual Impressions</p>
+                <h3 class="text-7xl font-semibold">2</h3>
+                <p class="text-gray-400 mt-1">Countries Served</p>
                 <div class="border-b border-blue-500 mt-3"></div>
             </div>
             <div>
-                <h3 class="text-2xl font-semibold">200+</h3>
-                <p class="text-gray-400 mt-1">New Customers</p>
+                <h3 class="text-7xl font-semibold">6+</h3>
+                <p class="text-gray-400 mt-1">Project Served</p>
                 <div class="border-b border-blue-500 mt-3"></div>
             </div>
         </div>
@@ -283,9 +285,52 @@
   <p class="text-xl sm:text-2xl text-gray-300">If You Can Dream It, We Can Play It!</p>
 </section>
 
-<section>
----SOON TO BE ADDED CARD---
+
+<section id="our-services" class="bg-black relative min-h-screen flex items-center justify-center">
+  <!-- Text "OUR SERVICES" besar dan glowing di belakang -->
+  <h2 class="absolute text-[100px] font-bold text-white/10 tracking-wider z-0 select-none glow-text">
+    OUR SERVICES
+  </h2>
+
+  <!-- Stack card yang tetap punya ID buat trigger ScrollTrigger -->
+  <div id="card-stack" class="relative w-[300px] h-[350px] z-10">
+    <!-- Card 1 -->
+    <div class="card absolute top-0 left-0 w-[250px] h-[300px] rotate-[-5deg] -translate-x-4 -translate-y-2 z-10 shadow-md rounded-xl overflow-hidden">
+      <img src="/storage/abstract1.png" class="w-full h-full object-cover" alt="Card 1">
+      <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/60 to-transparent text-white text-4xl font-light p-4 leading-tight">
+        UI/UX <br>Design
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card absolute top-0 left-0 w-[250px] h-[300px] rotate-[6deg] translate-x-6 -translate-y-3 z-20 shadow-md rounded-xl overflow-hidden">
+      <img src="/storage/abstract2.png" class="w-full h-full object-cover" alt="Card 2">
+      <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/60 to-transparent text-white text-4xl font-light p-4 leading-tight">
+        Software <br>Development
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card absolute top-0 left-0 w-[250px] h-[300px] rotate-[-3deg] -translate-x-3 translate-y-6 z-30 shadow-md rounded-xl overflow-hidden">
+      <img src="/storage/abstract3.png" class="w-full h-full object-cover" alt="Card 3">
+      <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/60 to-transparent text-white text-4xl font-light p-4 leading-tight">
+        Website <br>Development
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card absolute top-0 left-0 w-[250px] h-[300px] rotate-[2deg] translate-x-4 translate-y-2 z-40 shadow-lg rounded-xl overflow-hidden">
+      <img src="/storage/abstract4.png" class="w-full h-full object-cover" alt="Card 4">
+      <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/60 to-transparent text-white text-4xl font-light p-4 leading-tight">
+        IT <br>Consultant
+      </div>
+    </div>
+  </div>
 </section>
+
+
+
+
 
 @include('partials.footer')
 
