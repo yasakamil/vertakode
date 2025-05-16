@@ -10,12 +10,12 @@
     <!-- FAQ item -->
     <div class="bg-neutral-900 rounded-lg overflow-hidden">
       <button class="faq-toggle w-full flex justify-between items-center px-6 py-4 focus:outline-none">
-        <span class="text-left font-medium">What is Vertacode?</span>
+        <span class="text-left font-medium">What is Vertakode?</span>
         <span class="text-white text-xl transition-transform duration-300">+</span>
       </button>
       <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6 text-gray-400 text-sm">
         <div class="py-4">
-          Vertacode is a website development agency that specializes in creating high-quality, user-friendly, and performance-optimized websites tailored to meet business needs.
+          Vertakode is a website development agency that specializes in creating high-quality, user-friendly, and performance-optimized websites tailored to meet business needs.
         </div>
       </div>
     </div>
@@ -36,7 +36,7 @@
     <!-- Tambah item lainnya sama aja caranya -->
     <div class="bg-neutral-900 rounded-lg overflow-hidden">
       <button class="faq-toggle w-full flex justify-between items-center px-6 py-4 focus:outline-none">
-        <span class="text-left font-medium">How can I get started with Vertacode?</span>
+        <span class="text-left font-medium">How can I get started with Vertakode?</span>
         <span class="text-white text-xl transition-transform duration-300">+</span>
       </button>
       <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6 text-gray-400 text-sm">
@@ -60,7 +60,7 @@
 
     <div class="bg-neutral-900 rounded-lg overflow-hidden">
       <button class="faq-toggle w-full flex justify-between items-center px-6 py-4 focus:outline-none">
-        <span class="text-left font-medium">Can Vertacode redesign an existing website?</span>
+        <span class="text-left font-medium">Can Vertakode redesign an existing website?</span>
         <span class="text-white text-xl transition-transform duration-300">+</span>
       </button>
       <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6 text-gray-400 text-sm">
@@ -148,6 +148,6 @@
       <a href="#">Community</a>
       <a href="#">Brand Values</a>
     </div>
-    <p class="text-gray-500">© 2025 Vertacode Rights Reserved.</p>
+    <p class="text-gray-500">© 2025 Vertakode Rights Reserved.</p>
   </div>
 </section>

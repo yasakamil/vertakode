@@ -105,7 +105,7 @@
                     </svg>
                 </div>
                 <h3 class="text-xl font-bold mb-2">Mail</h3>
-                <p class="text-gray-400">vertacode@gmail.com</p>
+                <p class="text-gray-400">Vertakode@gmail.com</p>
                 <p class="text-gray-400">vncstudio@gmail.com</p>
             </div>
 

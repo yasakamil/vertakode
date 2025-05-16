@@ -6,7 +6,7 @@
     <title>Home with Video</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="relative min-h-screen overflow-auto background-color: #000">
+<body class="relative min-h-screen overflow-x-hidden">
 
     <!-- 🔥 Background Video -->
 <section class="fixed top-0 left-0 w-full h-full z-[-20]">
@@ -39,7 +39,7 @@
     <!-- Deskripsi -->
     <p class="mt-6 max-w-2xl text-gray-300 text-left">
       Your website is more than just a platform—it’s your identity in the digital world. 
-      At Vertacode, we create websites that are visually stunning, highly functional, and uniquely yours.
+      At Vertakode, we create websites that are visually stunning, highly functional, and uniquely yours.
     </p>
 
     <!-- CTA buttons -->
@@ -48,7 +48,7 @@
         Connect With Us
       </a>
       <a href="#" class="bg-[#3232ec] text-white px-6 py-3 rounded-md font-medium shadow hover:bg-[#2c2cd4] transition">
-        What is Vertacode?
+        What is Vertakode?
       </a>
     </div>
 
@@ -64,23 +64,6 @@
     <img src="/storage/reshoes.png" class="h-6" />
   </div>
 </div>
-
-<!-- TailwindCSS: Add custom animation -->
-<style>
-  @keyframes marquee {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-
-  .animate-marquee {
-    animation: marquee 10s linear infinite;
-  }
-</style>
-
 </div>
 </div>
 </section>
