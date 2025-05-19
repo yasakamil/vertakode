@@ -1,6 +1,6 @@
 <nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-lg bg-black/50 border-b border-white/10">
   <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-    <div class="relative flex h-16 items-center justify-between">
+    <div class="relative flex h-22 items-center justify-between">
       
       <!-- Mobile menu button -->
       <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -35,7 +35,7 @@
       </div>
 
       <!-- Get in Touch button -->
-      <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+      <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 hidden sm:block">
         <a href="mailto:contact@yourcompany.com" class="rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700 mr-6">
           Get in Touch
         </a>

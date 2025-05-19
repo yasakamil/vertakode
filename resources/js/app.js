@@ -1,6 +1,8 @@
 import './bootstrap';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -87,6 +89,41 @@ cards.slice().reverse().forEach((card, index) => {
 });
 
 
+// logo jalan
+document.addEventListener('DOMContentLoaded', () => {
+  const infiniteScrollContainers = document.querySelectorAll('.animate-infinite-scroll');
 
+  infiniteScrollContainers.forEach(container => {
+    const inner = container.children[0];
+    const duplicated = inner.cloneNode(true);
+    container.appendChild(duplicated);
 
+    let translateX = 0;
+    let animationSpeed = 0.3; // Coba kecepatan lebih lambat
 
+    function animate() {
+      translateX -= animationSpeed;
+      container.style.transform = `translateX(${translateX}px)`;
+
+      if (Math.abs(translateX) > inner.offsetWidth) {
+        translateX = 0;
+      }
+
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+  });
+});
+
+// swiper mobile
+  document.addEventListener("DOMContentLoaded", function () {
+    if (window.innerWidth < 768) {
+      new Swiper(".mySwiper", {
+        slidesPerView: 1.2,
+        spaceBetween: 20,
+        centeredSlides: true,
+        loop: true,
+      });
+    }
+  });

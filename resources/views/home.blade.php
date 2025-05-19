@@ -30,7 +30,7 @@
   />
 
   <!-- Konten di atas video -->
-  <div class="relative flex items-center h-full px-6">
+  <div class="relative flex items-center h-full px-8 text-left mx-auto max-w-4xl">
     <div>
       <h1 class="text-5xl sm:text-8xl leading-tight text-left text-white">
         Turning Ideas into <br />
@@ -43,13 +43,33 @@
       </p>
 
       <div class="mt-8 flex flex-wrap gap-4">
-        <a href="#" class="bg-white text-black px-6 py-3 rounded-md font-medium shadow hover:bg-gray-100 transition">
+        <a href="#" class="glow-btn bg-white text-black px-6 py-3 rounded-md font-medium shadow hover:bg-gray-100 transition">
           Connect With Us
         </a>
-        <a href="#" class="bg-[#3232ec] text-white px-6 py-3 rounded-md font-medium shadow hover:bg-[#2c2cd4] transition">
+        <a href="#" class="glow-btn bg-[#3232ec] text-white px-6 py-3 rounded-md font-medium shadow hover:bg-[#2c2cd4] transition">
           What is Vertakode?
         </a>
       </div>
+      <div class="logo-slider-container absolute w-full overflow-hidden py-8">
+    <div class="animate-infinite-scroll flex w-max space-x-8">
+        <div class="flex space-x-8">
+            <img src="{{ asset('storage/metrilogo.png') }}" alt="Metri Logo" class="h-8 md:h-10">
+            <img src="{{ asset('storage/citilinklogo.png') }}" alt="ProGamer Logo" class="h-8 md:h-10">
+            <img src="{{ asset('storage/progamerlogo.png') }}" alt="Citilink Logo" class="h-8 md:h-10">
+            <img src="{{ asset('storage/greyfurtlogo.png') }}" alt="Citilink Logo" class="h-8 md:h-10">
+            <img src="{{ asset('storage/reshoeslogo.png') }}" alt="Citilink Logo" class="h-8 md:h-10">
+            <img src="{{ asset('storage/royalsguardlogo.png') }}" alt="Citilink Logo" class="h-8 md:h-10">
+            </div>
+        <div class="flex space-x-8">
+            <img src="{{ asset('storage/metrilogo.png') }}" alt="Metri Logo" class="h-8 md:h-10">
+            <img src="{{ asset('storage/citilinklogo.png') }}" alt="ProGamer Logo" class="h-8 md:h-10">
+            <img src="{{ asset('storage/progamerlogo.png') }}" alt="Citilink Logo" class="h-8 md:h-10">
+            <img src="{{ asset('storage/greyfurtlogo.png') }}" alt="Citilink Logo" class="h-8 md:h-10">
+            <img src="{{ asset('storage/reshoeslogo.png') }}" alt="Citilink Logo" class="h-8 md:h-10">
+            <img src="{{ asset('storage/royalsguardlogo.png') }}" alt="Citilink Logo" class="h-8 md:h-10">
+            </div>
+    </div>
+</div>
     </div>
   </div>
 </section>
@@ -57,11 +77,11 @@
 
 <section class="relative px-6 py-24 bg-black text-white overflow-hidden">
   <!-- 🔹 Gambar segitiga kiri -->
-  <img src="/storage/leftdetail.png" class="absolute bottom-0 left-0 h-[200px] object-contain z-0" />
-
+<img src="/storage/leftdetail.png"
+     class="absolute bottom-0 left-0 h-[60px] sm:h-[100px] md:left-0 md:h-[120px] lg:left-50 lg:h-[250px] object-contain z-0" />
   <!-- 🔹 Gambar segitiga kanan -->
-  <img src="/storage/rightdetail.png" class="absolute bottom-0 right-0 h-[200px] object-contain z-0" />
-
+<img src="/storage/rightdetail.png"
+     class="absolute bottom-0 right-0 h-[60px] sm:h-[100px] md:right-0 md:h-[120px] lg:right-50 lg:h-[250px] object-contain z-0" />
   <!-- 🔸 Konten utama -->
   <div class="relative z-10 max-w-4xl mx-auto text-center">
     <p class="uppercase tracking-widest text-blue-400 text-sm">Latest Project</p>
@@ -78,9 +98,9 @@
   </div>
 </section>
 
-<div class="flex justify-center flex-wrap gap-6 bg-black p-10 min-h-screen">
+<div class="flex justify-center flex-wrap gap-30 bg-black p-10 min-h-screen">
     <!-- Card Citilink -->
-    <div class="relative w-85 h-96 rounded-2xl overflow-hidden group border border-gray-700 shadow-lg">
+    <div class="relative w-105 h-126 rounded-2xl overflow-hidden group border border-gray-700 shadow-lg">
         <img src="/storage/citilinkpesawat.png" alt="Citilink Background" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
         <div class="absolute bottom-1 left-1 right-1 p-4 bg-black/80 backdrop-blur-md rounded-lg">
             <div class="flex items-center mb-2">
@@ -98,7 +118,7 @@
     
 
     <!-- Card Greyfurt -->
-    <div class="relative w-85 h-96 rounded-2xl overflow-hidden group border border-gray-700 shadow-lg">
+    <div class="relative w-105 h-126 rounded-2xl overflow-hidden group border border-gray-700 shadow-lg">
         <img src="/storage/greyfurtbalonudara.png" alt="Greyfurt Background" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
         <div class="absolute bottom-1 left-1 right-1 p-4 bg-black/80 backdrop-blur-md rounded-lg">
             <div class="flex items-center mb-2">
@@ -115,7 +135,7 @@
     </div>
 
     <!-- Card Metri -->
-    <div class="relative w-85 h-96 rounded-2xl overflow-hidden group border border-gray-700 shadow-lg">
+    <div class="relative w-105 h-126 rounded-2xl overflow-hidden group border border-gray-700 shadow-lg">
         <img src="/storage/metriorang.png" alt="Metri Background" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
         <div class="absolute bottom-1 left-1 right-1 p-4 bg-black/80 backdrop-blur-md rounded-lg">
             <div class="flex items-center mb-2">
@@ -133,19 +153,22 @@
   </div>
 </div>
 
-<section class="relative bg-black pb-32 py-10">
-    {{-- Background Unions --}}
-    <img src="/storage/unionblue.png" alt="Union Blue"
-         class="absolute bottom-0 left-0 w-full z-0 pointer-events-none" />
+<section class="relative bg-black pb-32 py-24">
+  {{-- Background Unions --}}
+  <img src="/storage/unionblue.png" alt="Union Blue"
+       class="absolute bottom-0 left-0 w-full max-h-96 md:max-h-[30rem] z-0 pointer-events-none" />
 
-    {{-- unionblack: timpa di atas unionblue --}}
-    <img src="/storage/unionblack.png" alt="Union Black"
-         class="absolute bottom-25 left-0 w-full z-10 pointer-events-none" />
+  {{-- unionblack: timpa di atas unionblue --}}
+  <img src="/storage/unionblack.png" alt="Union Black"
+       class="absolute left-0 w-full z-10 pointer-events-none
+              bottom-6 sm:bottom-10 md:bottom-16 lg:bottom-32" />
 
-
-    <img src="/storage/bordercenter.png" alt="Union Black"
-         class="absolute bottom-0 left-0 w-full z-10 pointer-events-none" />     
+  {{-- bordercenter --}}
+  <img src="/storage/bordercenter.png" alt="Border Center"
+       class="absolute bottom-0 left-0 w-full z-10 pointer-events-none" />
 </section>
+
+
 
 <section class="bg-black text-white py-0 px-6 md:px-16 relative">
     <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
