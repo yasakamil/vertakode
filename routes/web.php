@@ -18,6 +18,10 @@ Route::get('/about-us', function () {
     return view('aboutus');
 })->name('about');
 
+Route::get('/portfolio-inside', function () {
+    return view('portfolio-inside');
+})->name('portfolio-inside');
+
 use App\Http\Controllers\ContactController;
 
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');

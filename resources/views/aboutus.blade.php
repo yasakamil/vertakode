@@ -11,7 +11,7 @@
 
 <body class="bg-black text-white">
 
-<section class="text-white pt-32 pb-40 relative overflow-hidden">
+<section class="text-white pt-32 pb-0 relative overflow-hidden">
     <!-- Hero Section Content -->
     <div class="container mx-auto px-4 text-center">
         <!-- Subtitle -->
@@ -67,7 +67,7 @@
 
 <!-- Previous Hero Section with Abstract Background Continues Below -->
 
-<section class="relative bg-black pb-32 -z-10">
+<section class="relative bg-black pb-15 -z-10">
     {{-- Background Unions --}}
     <img src="/storage/abstract.png" alt="Union Blue"
          class="absolute bottom-0 left-0 w-full z-0 pointer-events-none" />

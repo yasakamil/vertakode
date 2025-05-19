@@ -1,4 +1,4 @@
-<section class="bg-black text-white py-24 px-4">
+<section id="faq" class="bg-black text-white py-24 px-4">
   <div class="max-w-2xl mx-auto text-center mb-12">
     <h2 class="text-3xl font-semibold">Frequently Asked Question</h2>
     <p class="text-gray-400 mt-2 text-sm">

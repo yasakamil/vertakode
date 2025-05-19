@@ -8,70 +8,52 @@
 </head>
 <body class="relative min-h-screen overflow-x-hidden">
 
-    <!-- 🔥 Background Video -->
-<section class="fixed top-0 left-0 w-full h-full z-[-20]">
-  <video autoplay muted loop playsinline class="w-full h-full object-cover">
+@include('partials.navbar')
+
+<!-- Hero Section -->
+<section class="relative w-full h-screen overflow-hidden">
+
+  <!-- 🔥 Video sebagai background -->
+  <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-[-10]">
     <source src="{{ asset('/storage/bluewave.mp4') }}" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-</section>
 
+  <!-- Optional blur / efek -->
+  <div class="absolute inset-0 backdrop-blur-lg z-[-5]"></div>
 
-    
-    <!-- Navbar -->
-    @include('partials.navbar')
+    <!-- ✨ Blur transisi bawah -->
+  <img 
+    src="{{ asset('/storage/rectangleblur.png') }}" 
+    alt="blur transition" 
+    class="absolute bottom-[-100px] left-0 w-full z-0 pointer-events-none select-none" 
+  />
 
-    <!-- ✨ Content di atas video -->
-    <div class="flex items-center pl-8 h-[80vh] md:h-screen text-white text-center mt-20">
+  <!-- Konten di atas video -->
+  <div class="relative flex items-center h-full px-6">
+    <div>
+      <h1 class="text-5xl sm:text-8xl leading-tight text-left text-white">
+        Turning Ideas into <br />
+        <span class="text-white">Digital Reality</span>
+      </h1>
 
-         <!-- Gradasi biru -->
- <div class="fixed inset-0 backdrop-blur-lg z-[-10]"></div>
+      <p class="mt-6 max-w-2xl text-gray-300 text-left">
+        Your website is more than just a platform—it’s your identity in the digital world. 
+        At Vertakode, we create websites that are visually stunning, highly functional, and uniquely yours.
+      </p>
 
-    <section class="text-white relative overflow-hidden">
-  <div class="max-w-7xl mx-auto px-6 py-24">
-
-    <!-- Heading -->
-    <h1 class="text-5xl sm:text-8xl leading-tight text-left">
-      Turning Ideas into <br />
-      <span class="text-white">Digital Reality</span>
-    </h1>
-
-    <!-- Deskripsi -->
-    <p class="mt-6 max-w-2xl text-gray-300 text-left">
-      Your website is more than just a platform—it’s your identity in the digital world. 
-      At Vertakode, we create websites that are visually stunning, highly functional, and uniquely yours.
-    </p>
-
-    <!-- CTA buttons -->
-    <div class="mt-8 flex flex-wrap gap-4">
-      <a href="#" class="bg-white text-black px-6 py-3 rounded-md font-medium shadow hover:bg-gray-100 transition">
-        Connect With Us
-      </a>
-      <a href="#" class="bg-[#3232ec] text-white px-6 py-3 rounded-md font-medium shadow hover:bg-[#2c2cd4] transition">
-        What is Vertakode?
-      </a>
+      <div class="mt-8 flex flex-wrap gap-4">
+        <a href="#" class="bg-white text-black px-6 py-3 rounded-md font-medium shadow hover:bg-gray-100 transition">
+          Connect With Us
+        </a>
+        <a href="#" class="bg-[#3232ec] text-white px-6 py-3 rounded-md font-medium shadow hover:bg-[#2c2cd4] transition">
+          What is Vertakode?
+        </a>
+      </div>
     </div>
-
-    <!-- Logo klien -->
-    <div class="mt-16 overflow-hidden whitespace-nowrap">
-  <div class="inline-flex gap-8 animate-marquee">
-    <img src="/storage/arista.png" class="h-6" />
-    <img src="/storage/citilink.png" class="h-6" />
-    <img src="/storage/metri.png" class="h-6" />
-    <img src="/storage/progamer.png" class="h-6" />
-    <img src="/storage/greyfurt.png" class="h-6" />
-    <img src="/storage/royalsguard.png" class="h-6" />
-    <img src="/storage/reshoes.png" class="h-6" />
   </div>
-</div>
-</div>
-</div>
 </section>
 
-<!-- Gambar di bawah halaman -->
-<div class="w-full flex justify-center">
-  <img src="/storage/rectangleblur.png" alt="Your Image" class="max-w-full h-auto">
-</div>
 
 <section class="relative px-6 py-24 bg-black text-white overflow-hidden">
   <!-- 🔹 Gambar segitiga kiri -->
@@ -151,7 +133,7 @@
   </div>
 </div>
 
-<section class="relative bg-black pb-32">
+<section class="relative bg-black pb-32 py-10">
     {{-- Background Unions --}}
     <img src="/storage/unionblue.png" alt="Union Blue"
          class="absolute bottom-0 left-0 w-full z-0 pointer-events-none" />
@@ -165,7 +147,7 @@
          class="absolute bottom-0 left-0 w-full z-10 pointer-events-none" />     
 </section>
 
-<section class="bg-black text-white py-20 px-6 md:px-16 relative">
+<section class="bg-black text-white py-0 px-6 md:px-16 relative">
     <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
         <div>
             <h2 class="text-3xl md:text-4xl font-semibold leading-tight">
@@ -271,7 +253,7 @@
 
 <section id="our-services" class="bg-black relative min-h-screen flex items-center justify-center">
   <!-- Text "OUR SERVICES" besar dan glowing di belakang -->
-  <h2 class="absolute text-[100px] font-bold text-white/10 tracking-wider z-0 select-none glow-text">
+  <h2 class="absolute text-[50px] font-bold text-white/10 tracking-wider z-0 select-none glow-text">
     OUR SERVICES
   </h2>
 
