@@ -27,7 +27,7 @@ tailored solutions that drive success and make a real impact.
 </section>
 
 
-<div class="flex flex-wrap gap-6 justify-center">
+<div class="flex flex-wrap gap-6 justify-center px-4">
     <x-portfolio-card title="Citilink" year="2023" image="/storage/citilinkpesawat.png" :link="route('portfolio-inside')"/>
     <x-portfolio-card title="Metri" year="2025" image="/storage/metriorang.png" :link="route('portfolio-inside')"/>
     <x-portfolio-card title="Greyfurt" year="2025" image="/storage/greyfurtbalonudara.png" :link="route('portfolio-inside')"/>

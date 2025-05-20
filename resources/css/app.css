@@ -43,3 +43,7 @@
   .animate-marquee {
     animation: marquee 20s linear infinite;
   }
+
+    .glow-btn {
+    box-shadow: 0 0 15px rgba(0, 132, 255, 0.6), 0 0 30px rgba(0, 132, 255, 0.3);
+  }

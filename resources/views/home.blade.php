@@ -170,7 +170,7 @@
 
 
 
-<section class="bg-black text-white py-0 px-6 md:px-16 relative">
+<section class="bg-black text-white py-0 px-6 md:px-48 relative">
     <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
         <div>
             <h2 class="text-3xl md:text-4xl font-semibold leading-tight">
@@ -210,7 +210,7 @@
     </div>
 </section>
 
-<section class="bg-black text-white px-6 md:px-16 py-20">
+<section class="bg-black text-white px-6 md:px-48 py-20">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {{-- Kiri --}}
         <div>
@@ -240,7 +240,7 @@
         </div>
 
         {{-- Kanan --}}
-        <div class="grid grid-cols-2 gap-8 text-white text-sm">
+        <div class="grid grid-cols-2 gap-12 text-white text-sm">
             <div>
                 <h3 class="text-7xl font-semibold">10+</h3>
                 <p class="text-gray-400 mt-1">Industries Impacted</p>
@@ -264,7 +264,7 @@
         </div>
     </div>
 
-    <img src="/storage/line.png" alt="Union Black" class="mt-35"/>
+    <img src="/storage/line.png" alt="Union Black" class="mt-35 px-48"/>
 </section>
 
 <section class="bg-black text-white py-24 px-4 text-center">
@@ -276,7 +276,7 @@
 
 <section id="our-services" class="bg-black relative min-h-screen flex items-center justify-center">
   <!-- Text "OUR SERVICES" besar dan glowing di belakang -->
-  <h2 class="absolute text-[50px] font-bold text-white/10 tracking-wider z-0 select-none glow-text">
+  <h2 class="absolute text-[50px] text-white/10 tracking-wider z-0 select-none glow-text">
     OUR SERVICES
   </h2>
 
