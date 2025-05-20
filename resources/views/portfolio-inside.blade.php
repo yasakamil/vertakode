@@ -73,8 +73,8 @@
   </div>
 </section>
 
-<section class="w-full overflow-hidden bg-black py-10">
-  <div class="max-w-screen-xl mx-auto px-20">
+<section class="w-full overflow-hidden bg-black py-16">
+  <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 lg:px-20">
     <img 
       src="{{ asset('storage/citilinkpesawat.png') }}" 
       alt="Mockup Project Showcase" 

@@ -27,7 +27,7 @@
 
 
 
-<form action="{{ route('contact.store') }}" method="POST" class="mx-auto mb-10 w-full max-w-4xl bg-black space-y-6 p-6 rounded-lg border border-gray-800 shadow-xl">
+<form action="{{ route('contact.store') }}" method="POST" class="mx-auto mb-10 w-full max-w-4xl bg-black space-y-6 p-6 rounded-lg border border-gray-800 shadow-xl mt-16">
     @csrf
     <div class="grid md:grid-cols-2 gap-4">
         <div>
@@ -127,17 +127,19 @@
 </section>
 
 <!-- Trapesium Section (yang sudah ada) -->
-<section class="relative bg-black pb-32 mt-50">
-    {{-- Background Unions --}}
-    <img src="/storage/unionblue.png" alt="Union Blue"
-         class="absolute bottom-0 left-0 w-full z-0 pointer-events-none" />
+<section class="relative bg-black pb-32 py-24">
+  {{-- Background Unions --}}
+  <img src="/storage/unionblue.png" alt="Union Blue"
+       class="absolute bottom-0 left-0 w-full max-h-96 md:max-h-[30rem] z-0 pointer-events-none" />
 
-    {{-- unionblack: timpa di atas unionblue --}}
-    <img src="/storage/unionblack.png" alt="Union Black"
-         class="absolute bottom-25 left-0 w-full z-10 pointer-events-none" />
+  {{-- unionblack: timpa di atas unionblue --}}
+  <img src="/storage/unionblack.png" alt="Union Black"
+       class="absolute left-0 w-full z-10 pointer-events-none
+              bottom-6 sm:bottom-10 md:bottom-16 lg:bottom-32" />
 
-    <img src="/storage/bordercenter.png" alt="Union Black"
-         class="absolute bottom-0 left-0 w-full z-10 pointer-events-none" />     
+  {{-- bordercenter --}}
+  <img src="/storage/bordercenter.png" alt="Border Center"
+       class="absolute bottom-0 left-0 w-full z-10 pointer-events-none" />
 </section>
 
 </body>
