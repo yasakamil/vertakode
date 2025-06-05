@@ -75,14 +75,17 @@
 </section>
 
 
-<section class="relative px-6 py-24 bg-black text-white overflow-hidden">
-  <!-- 🔹 Gambar segitiga kiri -->
-<img src="/storage/leftdetail.png"
-     class="absolute bottom-0 left-0 h-[60px] sm:h-[100px] md:left-0 md:h-[120px] lg:left-50 lg:h-[250px] object-contain z-0" />
-  <!-- 🔹 Gambar segitiga kanan -->
-<img src="/storage/rightdetail.png"
-     class="absolute bottom-0 right-0 h-[60px] sm:h-[100px] md:right-0 md:h-[120px] lg:right-50 lg:h-[250px] object-contain z-0" />
-  <!-- 🔸 Konten utama -->
+<section class="relative  py-24 bg-red-400 text-white overflow-hidden">
+  <div class="bg-yellow-400 absolute flex h-full">
+
+    <!-- 🔹 Gambar segitiga kiri -->
+  <img src="/storage/leftdetail.png"
+       class="w-full" />
+    <!-- 🔹 Gambar segitiga kanan -->
+  <img src="/storage/rightdetail.png"
+       class="w-full" />
+    <!-- 🔸 Konten utama -->
+  </div>
   <div class="relative z-10 max-w-4xl mx-auto text-center">
     <p class="uppercase tracking-widest text-blue-400 text-sm">Latest Project</p>
     <h2 class="text-4xl md:text-5xl font-bold mt-4">Delivering Tangible Results<br>That Propel Your Success</h2>
