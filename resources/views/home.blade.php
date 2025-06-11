@@ -75,24 +75,30 @@
 </section>
 
 
-<section class="relative  py-24 bg-red-400 text-white overflow-hidden">
-  <div class="bg-yellow-400 absolute flex h-full">
+<section class="relative  py-24 bg-black text-white overflow-hidden">
+  <div class="absolute flex h-full w-full justify-between">
 
-    <!-- 🔹 Gambar segitiga kiri -->
-  <img src="/storage/leftdetail.png"
-       class="w-full" />
-    <!-- 🔹 Gambar segitiga kanan -->
-  <img src="/storage/rightdetail.png"
-       class="w-full" />
-    <!-- 🔸 Konten utama -->
-  </div>
+<img src="/storage/leftdetail.png" 
+     alt="Left Detail"
+     class=" top-1/2 -translate-y-1/2 w-auto z-50 
+            mt-42 
+            h-24 left-2 
+            md:h-28 md:left-4 
+            lg:h-32 lg:left-8" />
+
+<img src="/storage/rightdetail.png"
+     alt="Right Detail"
+     class=" top-1/2 -translate-y-1/2 w-auto z-50 
+            mt-42 
+            h-23 right-2 
+            md:h-28 md:right-4 
+            lg:h-32 lg:right-8" />
+       
+</div>
   <div class="relative z-10 max-w-4xl mx-auto text-center">
     <p class="uppercase tracking-widest text-blue-400 text-sm">Latest Project</p>
     <h2 class="text-4xl md:text-5xl font-bold mt-4">Delivering Tangible Results<br>That Propel Your Success</h2>
     <p class="mt-6 text-gray-400">At the core of everything we do lies a commitment to delivering<br>measurable outcomes that drive your success.</p>
-    
-
-
     <div class="mt-8">
       <a href="#" class="glow-btn inline-block bg-blue-600 text-white px-6 py-3 rounded-md font-medium shadow-lg hover:scale-105 transition-all duration-300 glow-btn">
         Contact Us
@@ -101,7 +107,7 @@
   </div>
 </section>
 
-<div class="flex justify-center flex-wrap gap-30 bg-black p-10 min-h-screen">
+<div class="flex justify-center flex-wrap gap-10 bg-black p-10 min-h-screen">
     <!-- Card Citilink -->
     <div class="relative w-105 h-126 rounded-2xl overflow-hidden group border border-gray-700 shadow-lg">
         <img src="/storage/citilinkpesawat.png" alt="Citilink Background" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
@@ -157,18 +163,18 @@
 </div>
 
 <section class="relative bg-black pb-32 py-24">
-  {{-- Background Unions --}}
-  <img src="/storage/unionblue.png" alt="Union Blue"
-       class="absolute bottom-0 left-0 w-full max-h-96 md:max-h-[30rem] z-0 pointer-events-none" />
+    {{-- Background Unions --}}
+    <img src="/storage/unionblue.png" alt="Union Blue"
+         class="absolute bottom-0 left-0 w-full max-h-96 md:max-h-[18rem] z-0 pointer-events-none" />
 
-  {{-- unionblack: timpa di atas unionblue --}}
-  <img src="/storage/unionblack.png" alt="Union Black"
-       class="absolute left-0 w-full z-10 pointer-events-none
-              bottom-6 sm:bottom-10 md:bottom-16 lg:bottom-32" />
+    {{-- unionblack: NAIKKAN KE z-20 dan angkat sedikit dari bawah --}}
+    <img src="/storage/unionblack.png" alt="Union Black"
+         class="absolute left-0 w-full z-20 pointer-events-none
+                bottom-8 sm:bottom-8 lg:bottom-20" />
 
-  {{-- bordercenter --}}
-  <img src="/storage/bordercenter.png" alt="Border Center"
-       class="absolute bottom-0 left-0 w-full z-10 pointer-events-none" />
+    {{-- bordercenter: Biarkan di z-10 --}}
+    <img src="/storage/bordercenter.png" alt="Border Center"
+         class="absolute bottom-0 left-0 w-full z-50 pointer-events-none" />
 </section>
 
 

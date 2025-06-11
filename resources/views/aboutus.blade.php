@@ -113,12 +113,25 @@
 </section>
 
 <section class="relative px-6 py-24 bg-black text-white overflow-hidden">
-  <!-- 🔹 Gambar segitiga kiri -->
-<img src="/storage/leftdetail.png"
-     class="absolute bottom-0 left-0 h-[60px] sm:h-[100px] md:left-0 md:h-[120px] lg:left-50 lg:h-[250px] object-contain z-0" />
-  <!-- 🔹 Gambar segitiga kanan -->
+  <div class="absolute flex h-full w-full justify-between">
+
+<img src="/storage/leftdetail.png" 
+     alt="Left Detail"
+     class=" top-1/2 -translate-y-1/2 w-auto z-50 
+            mt-42 
+            h-24 left-2 
+            md:h-28 md:left-4 
+            lg:h-32 lg:left-8" />
+
 <img src="/storage/rightdetail.png"
-     class="absolute bottom-0 right-0 h-[60px] sm:h-[100px] md:right-0 md:h-[120px] lg:right-50 lg:h-[250px] object-contain z-0" />
+     alt="Right Detail"
+     class=" top-1/2 -translate-y-1/2 w-auto z-50 
+            mt-42 
+            h-23 right-2 
+            md:h-28 md:right-4 
+            lg:h-32 lg:right-8" />
+       
+</div>
   <!-- 🔸 Konten utama -->
   <div class="relative z-10 max-w-4xl mx-auto text-center">
     <p class="uppercase tracking-widest text-blue-400 text-sm">Latest Project</p>
