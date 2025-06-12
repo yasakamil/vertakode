@@ -74,18 +74,18 @@
 </section>
 
 <section class="relative bg-black pb-32 py-24">
-  {{-- Background Unions --}}
-  <img src="/storage/unionblue.png" alt="Union Blue"
-       class="absolute bottom-0 left-0 w-full max-h-96 md:max-h-[30rem] z-0 pointer-events-none" />
+    {{-- Background Unions --}}
+    <img src="/storage/unionblue.png" alt="Union Blue"
+         class="absolute bottom-0 xl:bottom-20 left-0 w-full max-h-96 md:max-h-[18rem] z-0 pointer-events-none" />
 
-  {{-- unionblack: timpa di atas unionblue --}}
-  <img src="/storage/unionblack.png" alt="Union Black"
-       class="absolute left-0 w-full z-10 pointer-events-none
-              bottom-6 sm:bottom-10 md:bottom-16 lg:bottom-32" />
+    {{-- unionblack: NAIKKAN KE z-20 dan angkat sedikit dari bawah --}}
+    <img src="/storage/unionblack.png" alt="Union Black"
+     class="absolute left-0 w-full z-20 pointer-events-none bottom-8 xl:bottom-20" />
 
-  {{-- bordercenter --}}
-  <img src="/storage/bordercenter.png" alt="Border Center"
-       class="absolute bottom-0 left-0 w-full z-10 pointer-events-none" />
+
+    {{-- bordercenter: Biarkan di z-10 --}}
+    <img src="/storage/bordercenter.png" alt="Border Center"
+         class="absolute bottom-0 left-0 w-full z-50 pointer-events-none" />
 </section>
 
 <section class="bg-black py-16">
@@ -112,101 +112,110 @@
     </div>
 </section>
 
-<section class="relative px-6 py-24 bg-black text-white overflow-hidden">
+<section class="relative py-24 bg-black text-white overflow-hidden">
   <div class="absolute flex h-full w-full justify-between">
 
-<img src="/storage/leftdetail.png" 
-     alt="Left Detail"
-     class=" top-1/2 -translate-y-1/2 w-auto z-50 
-            mt-42 
-            h-24 left-2 
-            md:h-28 md:left-4 
-            lg:h-32 lg:left-8" />
+  <div class="absolute inset-0 flex justify-between items-start pointer-events-none">
+  <img src="/storage/leftdetail.png" 
+       alt="Left Detail"
+       class="relative top-80 h-16 sm:h-20 md:h-28 lg:h-32 w-auto z-50 left-2 sm:left-4 lg:left-8 transition-all duration-300" />
 
-<img src="/storage/rightdetail.png"
-     alt="Right Detail"
-     class=" top-1/2 -translate-y-1/2 w-auto z-50 
-            mt-42 
-            h-23 right-2 
-            md:h-28 md:right-4 
-            lg:h-32 lg:right-8" />
+  <img src="/storage/rightdetail.png"
+       alt="Right Detail"
+       class="relative top-80 h-16 sm:h-20 md:h-28 lg:h-32 w-auto z-50 right-2 sm:right-4 lg:right-8 transition-all duration-300" />
+</div>
        
 </div>
   <!-- 🔸 Konten utama -->
   <div class="relative z-10 max-w-4xl mx-auto text-center">
     <p class="uppercase tracking-widest text-blue-400 text-sm">Latest Project</p>
-    <h2 class="text-4xl md:text-5xl font-bold mt-4">Tools and Technologies<br>That Propel Your Success</h2>
+    <h2 class="text-2xl md:text-5xl font-bold mt-4">Tools and Technologies<br>That Propel Your Success</h2>
     <p class="mt-6 text-gray-400">At the core of everything we do lies a commitment to delivering<br>measurable outcomes that drive your success.</p>
     
 
 
     <div class="mt-8">
-      <a href="#" class="glow-btn inline-block bg-blue-600 text-white px-6 py-3 rounded-md font-medium shadow-lg hover:scale-105 transition-all duration-300 glow-btn">
-        Contact Us
-      </a>
+      <a href="#"
+   class="glow-btn inline-block bg-blue-600 text-white 
+          text-sm sm:text-base 
+          px-4 py-2 sm:px-6 sm:py-3 
+          rounded-md font-medium shadow-lg 
+          hover:scale-105 transition-all duration-300">
+  Contact Us
+</a>
     </div>
   </div>
 </section>
 
-<div class="bg-black py-10">
-    <div class="container mx-auto px-4">
-        <div class="row-atas flex flex-wrap justify-center gap-6 transition-transform duration-300 ease-linear will-change-transform">
-            <!-- Kartu Framer -->
-            <div class="bg-gray-800 rounded-md shadow-md p-6 w-64 flex-shrink-0">
-                <img src="{{ asset('icons/framer.svg') }}" alt="Framer" class="w-10 h-10 mb-2">
-                <h3 class="text-white font-semibold">Framer</h3>
-                <p class="text-gray-400 text-sm">Interactive design tool for UI prototyping and animation.</p>
-            </div>
-            <!-- Kartu Tailwind -->
-            <div class="bg-gray-800 rounded-md shadow-md p-6 w-64 flex-shrink-0">
-                <img src="{{ asset('icons/tailwind.svg') }}" alt="Tailwind" class="w-10 h-10 mb-2">
-                <h3 class="text-white font-semibold">Tailwind</h3>
-                <p class="text-gray-400 text-sm">Utility-first CSS framework for flexible styling.</p>
-            </div>
-            <!-- Kartu Next.js -->
-            <div class="bg-gray-800 rounded-md shadow-md p-6 w-64 flex-shrink-0">
-                <img src="{{ asset('icons/nextjs.svg') }}" alt="Next.js" class="w-10 h-10 mb-2">
-                <h3 class="text-white font-semibold">Next.js</h3>
-                <p class="text-gray-400 text-sm">React framework for building fast and scalable web applications.</p>
-            </div>
-            <!-- Kartu React -->
-            <div class="bg-gray-800 rounded-md shadow-md p-6 w-64 flex-shrink-0">
-                <img src="{{ asset('icons/java.svg') }}" alt="React" class="w-10 h-10 mb-2">
-                <h3 class="text-white font-semibold">React</h3>
-                <p class="text-gray-400 text-sm">A JavaScript library for building user interfaces.</p>
-            </div>
-        </div>
+<!-- Container utama -->
+<div class="bg-black py-16">
+  <div class="container mx-auto px-4 space-y-10">
+
+    <!-- Baris Atas -->
+    <div class="flex flex-wrap justify-center gap-6">
+      <!-- Kartu Framer -->
+      <div class="bg-gray-800 rounded-md shadow-md p-6 w-full sm:w-64">
+        <img src="{{ asset('icons/framer.svg') }}" alt="Framer" class="w-10 h-10 mb-2">
+        <h3 class="text-white font-semibold">Framer</h3>
+        <p class="text-gray-400 text-sm">Interactive design tool for UI prototyping and animation.</p>
+      </div>
+
+      <!-- Kartu Tailwind -->
+      <div class="bg-gray-800 rounded-md shadow-md p-6 w-full sm:w-64">
+        <img src="{{ asset('icons/tailwind.svg') }}" alt="Tailwind" class="w-10 h-10 mb-2">
+        <h3 class="text-white font-semibold">Tailwind</h3>
+        <p class="text-gray-400 text-sm">Utility-first CSS framework for flexible styling.</p>
+      </div>
+
+      <!-- Kartu Next.js -->
+      <div class="bg-gray-800 rounded-md shadow-md p-6 w-full sm:w-64">
+        <img src="{{ asset('icons/nextjs.svg') }}" alt="Next.js" class="w-10 h-10 mb-2">
+        <h3 class="text-white font-semibold">Next.js</h3>
+        <p class="text-gray-400 text-sm">React framework for building fast and scalable web applications.</p>
+      </div>
+
+      <!-- Kartu React -->
+      <div class="bg-gray-800 rounded-md shadow-md p-6 w-full sm:w-64">
+        <img src="{{ asset('icons/java.svg') }}" alt="React" class="w-10 h-10 mb-2">
+        <h3 class="text-white font-semibold">React</h3>
+        <p class="text-gray-400 text-sm">A JavaScript library for building user interfaces.</p>
+      </div>
     </div>
 
-    <div class="container mx-auto px-4 mt-8">
-        <div class="row-bawah flex flex-wrap justify-center gap-6 transition-transform duration-300 ease-linear will-change-transform">
-            <!-- Kartu GSAP -->
-            <div class="bg-gray-800 rounded-md shadow-md p-6 w-64 flex-shrink-0">
-                <img src="{{ asset('icons/gsap.svg') }}" alt="GSAP" class="w-10 h-10 mb-2">
-                <h3 class="text-white font-semibold">GSAP</h3>
-                <p class="text-gray-400 text-sm">Powerful JavaScript animation library with high performance.</p>
-            </div>
-            <!-- Kartu Oracle -->
-            <div class="bg-gray-800 rounded-md shadow-md p-6 w-64 flex-shrink-0">
-                <img src="{{ asset('icons/oracle.svg') }}" alt="Oracle" class="w-10 h-10 mb-2">
-                <h3 class="text-white font-semibold">Oracle</h3>
-                <p class="text-gray-400 text-sm">Database management system for enterprise solutions.</p>
-            </div>
-            <!-- Kartu WordPress -->
-            <div class="bg-gray-800 rounded-md shadow-md p-6 w-64 flex-shrink-0">
-                <img src="{{ asset('icons/wordpress.svg') }}" alt="WordPress" class="w-10 h-10 mb-2">
-                <h3 class="text-white font-semibold">WordPress</h3>
-                <p class="text-gray-400 text-sm">Popular CMS for creating and managing websites easily.</p>
-            </div>
-            <!-- Kartu PHP -->
-            <div class="bg-gray-800 rounded-md shadow-md p-6 w-64 flex-shrink-0">
-                <img src="{{ asset('icons/php.svg') }}" alt="PHP" class="w-10 h-10 mb-2">
-                <h3 class="text-white font-semibold">PHP</h3>
-                <p class="text-gray-400 text-sm">A widely-used open source general-purpose scripting language.</p>
-            </div>
-        </div>
+    <!-- Baris Bawah -->
+    <div class="flex flex-wrap justify-center gap-6">
+      <!-- Kartu GSAP -->
+      <div class="bg-gray-800 rounded-md shadow-md p-6 w-full sm:w-64">
+        <img src="{{ asset('icons/gsap.svg') }}" alt="GSAP" class="w-10 h-10 mb-2">
+        <h3 class="text-white font-semibold">GSAP</h3>
+        <p class="text-gray-400 text-sm">Powerful JavaScript animation library with high performance.</p>
+      </div>
+
+      <!-- Kartu Oracle -->
+      <div class="bg-gray-800 rounded-md shadow-md p-6 w-full sm:w-64">
+        <img src="{{ asset('icons/oracle.svg') }}" alt="Oracle" class="w-10 h-10 mb-2">
+        <h3 class="text-white font-semibold">Oracle</h3>
+        <p class="text-gray-400 text-sm">Database management system for enterprise solutions.</p>
+      </div>
+
+      <!-- Kartu WordPress -->
+      <div class="bg-gray-800 rounded-md shadow-md p-6 w-full sm:w-64">
+        <img src="{{ asset('icons/wordpress.svg') }}" alt="WordPress" class="w-10 h-10 mb-2">
+        <h3 class="text-white font-semibold">WordPress</h3>
+        <p class="text-gray-400 text-sm">Popular CMS for creating and managing websites easily.</p>
+      </div>
+
+      <!-- Kartu PHP -->
+      <div class="bg-gray-800 rounded-md shadow-md p-6 w-full sm:w-64">
+        <img src="{{ asset('icons/php.svg') }}" alt="PHP" class="w-10 h-10 mb-2">
+        <h3 class="text-white font-semibold">PHP</h3>
+        <p class="text-gray-400 text-sm">A widely-used open source general-purpose scripting language.</p>
+      </div>
     </div>
+
+  </div>
 </div>
+
 
 </body>
 

@@ -11,7 +11,7 @@
 @include('partials.navbar')
 
 <!-- Hero Section -->
-<section class="relative w-full h-screen overflow-hidden">
+<section class="relative w-full min-h-screen overflow-hidden">
 
   <!-- 🔥 Video sebagai background -->
   <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-[-10]">
@@ -22,15 +22,8 @@
   <!-- Optional blur / efek -->
   <div class="absolute inset-0 backdrop-blur-lg z-[-5]"></div>
 
-    <!-- ✨ Blur transisi bawah -->
-  <img 
-    src="{{ asset('/storage/rectangleblur.png') }}" 
-    alt="blur transition" 
-    class="absolute bottom-[-100px] left-0 w-full z-0 pointer-events-none select-none" 
-  />
-
   <!-- Konten di atas video -->
-  <div class="relative flex items-center h-full px-8 text-left mx-auto max-w-4xl">
+<div class="absolute flex items-center h-full px-6 pb-24 pt-24 sm:pt-0 sm:px-16 text-left mx-auto max-w-12xl">
     <div>
       <h1 class="text-5xl sm:text-8xl leading-tight text-left text-white">
         Turning Ideas into <br />
@@ -50,6 +43,7 @@
           What is Vertakode?
         </a>
       </div>
+      
       <div class="logo-slider-container absolute w-full overflow-hidden py-8">
     <div class="animate-infinite-scroll flex w-max space-x-8">
         <div class="flex space-x-8">
@@ -72,39 +66,44 @@
 </div>
     </div>
   </div>
+  <!-- Fade Gradient dari video ke hitam -->
+<div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-black z-0 pointer-events-none"></div>
+
 </section>
 
 
 <section class="relative  py-24 bg-black text-white overflow-hidden">
-  <div class="absolute flex h-full w-full justify-between">
+  <div class="absolute inset-0 flex justify-between items-start pointer-events-none">
+  <img src="/storage/leftdetail.png" 
+       alt="Left Detail"
+       class="relative top-80 h-16 sm:h-20 md:h-28 lg:h-32 w-auto z-50 left-2 sm:left-4 lg:left-8 transition-all duration-300" />
 
-<img src="/storage/leftdetail.png" 
-     alt="Left Detail"
-     class=" top-1/2 -translate-y-1/2 w-auto z-50 
-            mt-42 
-            h-24 left-2 
-            md:h-28 md:left-4 
-            lg:h-32 lg:left-8" />
-
-<img src="/storage/rightdetail.png"
-     alt="Right Detail"
-     class=" top-1/2 -translate-y-1/2 w-auto z-50 
-            mt-42 
-            h-23 right-2 
-            md:h-28 md:right-4 
-            lg:h-32 lg:right-8" />
-       
+  <img src="/storage/rightdetail.png"
+       alt="Right Detail"
+       class="relative top-80 h-16 sm:h-20 md:h-28 lg:h-32 w-auto z-50 right-2 sm:right-4 lg:right-8 transition-all duration-300" />
 </div>
-  <div class="relative z-10 max-w-4xl mx-auto text-center">
-    <p class="uppercase tracking-widest text-blue-400 text-sm">Latest Project</p>
-    <h2 class="text-4xl md:text-5xl font-bold mt-4">Delivering Tangible Results<br>That Propel Your Success</h2>
-    <p class="mt-6 text-gray-400">At the core of everything we do lies a commitment to delivering<br>measurable outcomes that drive your success.</p>
-    <div class="mt-8">
-      <a href="#" class="glow-btn inline-block bg-blue-600 text-white px-6 py-3 rounded-md font-medium shadow-lg hover:scale-105 transition-all duration-300 glow-btn">
-        Contact Us
-      </a>
-    </div>
+
+  <div class="relative z-10 max-w-4xl mx-auto text-center px-4">
+  <p class="uppercase tracking-widest text-blue-400 text-sm sm:text-sm">Latest Project</p>
+  <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mt-4 leading-snug">
+    Delivering Tangible Results<br>That Propel Your Success
+  </h2>
+  <p class="mt-4 text-gray-400 text-sm sm:text-base leading-relaxed">
+    At the core of everything we do lies a commitment to delivering<br>measurable outcomes that drive your success.
+  </p>
+  <div class="mt-6">
+    <a href="#"
+   class="glow-btn inline-block bg-blue-600 text-white 
+          text-sm sm:text-base 
+          px-4 py-2 sm:px-6 sm:py-3 
+          rounded-md font-medium shadow-lg 
+          hover:scale-105 transition-all duration-300">
+  Contact Us
+</a>
+
   </div>
+</div>
+
 </section>
 
 <div class="flex justify-center flex-wrap gap-10 bg-black p-10 min-h-screen">
@@ -165,16 +164,16 @@
 <section class="relative bg-black pb-32 py-24">
     {{-- Background Unions --}}
     <img src="/storage/unionblue.png" alt="Union Blue"
-         class="absolute bottom-0 left-0 w-full max-h-96 md:max-h-[18rem] z-0 pointer-events-none" />
+         class="absolute bottom-0 xl:bottom-20 left-0 w-full max-h-96 md:max-h-[18rem] z-0 pointer-events-none" />
 
     {{-- unionblack: NAIKKAN KE z-20 dan angkat sedikit dari bawah --}}
     <img src="/storage/unionblack.png" alt="Union Black"
-         class="absolute left-0 w-full z-20 pointer-events-none
-                bottom-8 sm:bottom-8 lg:bottom-20" />
+     class="absolute left-0 w-full z-20 pointer-events-none bottom-8 xl:bottom-20" />
+
 
     {{-- bordercenter: Biarkan di z-10 --}}
     <img src="/storage/bordercenter.png" alt="Border Center"
-         class="absolute bottom-0 left-0 w-full z-50 pointer-events-none" />
+         class="absolute bottom-2 sm:bottom-0 left-0 w-full z-50 pointer-events-none" />
 </section>
 
 

@@ -71,6 +71,7 @@
     </div>
 
   </div>
+  <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-black z-10 pointer-events-none"></div>
 </section>
 
 <section class="w-full overflow-hidden bg-black py-16">

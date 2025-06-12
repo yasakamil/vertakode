@@ -22,46 +22,6 @@ console.log("GSAP is loaded:", gsap);
 
 
 
-// Kode animasi lo yang tadinya di blade
-document.addEventListener('DOMContentLoaded', function() {
-    const rowAtas = document.querySelector('.row-atas');
-    const rowBawah = document.querySelector('.row-bawah');
-    const cardWidth = 256;
-
-    function animateLeft() {
-        gsap.to(rowAtas, {
-            x: -cardWidth,
-            duration: 3.3,
-            ease: "power1.inOut",
-            onComplete: () => {
-                const firstCard = rowAtas.children[0];
-                rowAtas.appendChild(firstCard);
-                gsap.set(rowAtas, { x: 0 });
-                animateLeft();
-            }
-        });
-    }
-
-    function animateRight() {
-        gsap.to(rowBawah, {
-            x: cardWidth,
-            duration: 3.3,
-            ease: "power1.inOut",
-            onComplete: () => {
-                const lastCard = rowBawah.children[rowBawah.children.length - 1];
-                rowBawah.insertBefore(lastCard, rowBawah.firstChild);
-                gsap.set(rowBawah, { x: 0 });
-                animateRight();
-            }
-        });
-    }
-
-    if (rowAtas && rowBawah) {
-        animateLeft();
-        animateRight();
-    }
-});
-
 
 // Animate cards satu per satu pas scroll
 gsap.registerPlugin(ScrollTrigger);
