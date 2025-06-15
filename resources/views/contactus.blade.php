@@ -126,20 +126,19 @@
     </div>
 </section>
 
-<!-- Trapesium Section (yang sudah ada) -->
 <section class="relative bg-black pb-32 py-24">
-  {{-- Background Unions --}}
-  <img src="/storage/unionblue.png" alt="Union Blue"
-       class="absolute bottom-0 left-0 w-full max-h-96 md:max-h-[30rem] z-0 pointer-events-none" />
+    {{-- Background Unions --}}
+    <img src="/storage/unionblue.png" alt="Union Blue"
+         class="absolute bottom-0 xl:bottom-20 left-0 w-full max-h-96 md:max-h-[18rem] z-0 pointer-events-none" />
 
-  {{-- unionblack: timpa di atas unionblue --}}
-  <img src="/storage/unionblack.png" alt="Union Black"
-       class="absolute left-0 w-full z-10 pointer-events-none
-              bottom-6 sm:bottom-10 md:bottom-16 lg:bottom-32" />
+    {{-- unionblack: NAIKKAN KE z-20 dan angkat sedikit dari bawah --}}
+    <img src="/storage/unionblack.png" alt="Union Black"
+     class="absolute left-0 w-full z-20 pointer-events-none bottom-8 xl:bottom-20" />
 
-  {{-- bordercenter --}}
-  <img src="/storage/bordercenter.png" alt="Border Center"
-       class="absolute bottom-0 left-0 w-full z-10 pointer-events-none" />
+
+    {{-- bordercenter: Biarkan di z-10 --}}
+    <img src="/storage/bordercenter.png" alt="Border Center"
+         class="absolute bottom-2 sm:bottom-0 left-0 w-full z-50 pointer-events-none" />
 </section>
 
 </body>

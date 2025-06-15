@@ -23,7 +23,7 @@
   <div class="absolute inset-0 backdrop-blur-lg z-[-5]"></div>
 
   <!-- Konten di atas video -->
-<div class="absolute flex items-center h-full px-6 pb-24 pt-24 sm:pt-0 sm:px-16 text-left mx-auto max-w-12xl">
+<div class="absolute flex items-center h-full px-6 pb-24 pt-24 sm:pt-20 sm:px-16 text-left mx-auto max-w-12xl">
     <div>
       <h1 class="text-5xl sm:text-8xl leading-tight text-left text-white">
         Turning Ideas into <br />
@@ -67,13 +67,13 @@
     </div>
   </div>
   <!-- Fade Gradient dari video ke hitam -->
-<div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-black z-0 pointer-events-none"></div>
+<div class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-transparent to-black z-0 pointer-events-none"></div>
 
 </section>
 
 
 <section class="relative  py-24 bg-black text-white overflow-hidden">
-  <div class="absolute inset-0 flex justify-between items-start pointer-events-none">
+  <div class="absolute inset-0 flex justify-between items-start pointer-events-none z-10">
   <img src="/storage/leftdetail.png" 
        alt="Left Detail"
        class="relative top-80 h-16 sm:h-20 md:h-28 lg:h-32 w-auto z-50 left-2 sm:left-4 lg:left-8 transition-all duration-300" />

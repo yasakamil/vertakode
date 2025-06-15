@@ -113,7 +113,7 @@
 </section>
 
 <section class="relative py-24 bg-black text-white overflow-hidden">
-  <div class="absolute flex h-full w-full justify-between">
+  <div class="absolute flex h-full w-full justify-between z-10">
 
   <div class="absolute inset-0 flex justify-between items-start pointer-events-none">
   <img src="/storage/leftdetail.png" 
